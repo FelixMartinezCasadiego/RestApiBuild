@@ -1,6 +1,31 @@
 import { v4 as uuidv4 } from 'uuid';
 
-let users = [];
+let users = [
+    {
+        firstName: "John",
+        lastName: "Doe",
+        age: 25,
+        id: 1
+    },
+    {
+        firstName: "Jen",
+        lastName: "Doe",
+        age: 23,
+        id: 2
+    },
+    {
+        firstName: "Louis",
+        lastName: "Doe",
+        age: 10,
+        id: 3
+    },
+    {
+        firstName: "Jake",
+        lastName: "Doe",
+        age: 19,
+        id: 4
+    },  
+];
 
 export const getUsers = (req, res) => {
     res.send(users)
